@@ -1,18 +1,19 @@
+// src/hooks/useTypewriter.ts
 import { useEffect, useState } from "react";
 
-export function useTypewriter(text: string, speedMs = 24) {
+export function useTypewriter(text: string, speed = 30) {
   const [out, setOut] = useState("");
 
   useEffect(() => {
-    setOut(""); // restart if text changes
+    setOut("");
     let i = 0;
     const id = setInterval(() => {
       i++;
       setOut(text.slice(0, i));
       if (i >= text.length) clearInterval(id);
-    }, speedMs);
+    }, speed);
     return () => clearInterval(id);
-  }, [text, speedMs]);
+  }, [text, speed]);
 
   return out;
 }
