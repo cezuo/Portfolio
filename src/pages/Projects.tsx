@@ -65,6 +65,15 @@ const projects = [
     icon: "📷",
     image: "images/ootd.png", // add later
   },
+  {
+    title: "Plain Archive",
+    description: "A minimalist E-commerce site for vintage clothing and accessories.",
+    tech: ["React", "TypeScript", "Tailwind", "Stripe", "Prisma","Firebase", "PostgreSQL"],
+    rarity: "Epic",
+    icon: "🛒",
+    image: "images/Plain-archive.png", // add later
+
+  }
 ] as const;
 
 const rarityColors: Record<string, string> = {
