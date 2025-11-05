@@ -41,8 +41,8 @@ export default function About() {
               {[
                 { skill: "Frontend Development", level: 95 },
                 { skill: "Backend Development", level: 88 },
-                { skill: "UI/UX Design", level: 82 },
-                { skill: "Problem Solving", level: 97 },
+                { skill: "UI/UX Design", level: 89 },
+                { skill: "Problem Solving", level: 99 },
               ].map((s) => (
                 <div key={s.skill} className="space-y-1">
                   <div className="flex justify-between">

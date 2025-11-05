@@ -69,11 +69,41 @@ const projects = [
     title: "Plain Archive",
     description: "A minimalist E-commerce site for vintage clothing and accessories.",
     tech: ["React", "TypeScript", "Tailwind", "Stripe", "Prisma","Firebase", "PostgreSQL"],
-    rarity: "Epic",
+    rarity: "Rare",
     icon: "🛒",
     image: "images/Plain-archive.png", // add later
 
+  },
+  {
+    title: "Just-DANCE AI",
+    description: "An AI-powered dance choreography generator.",
+    tech: ["Next.js", "Python", "Choreography", "AI Models", "OpenAI"],
+    rarity: "Epic",
+    icon: "🕺",
+    image: "images/just-dance.png", // add later
+
+  },
+  {
+    title: " DJ Gesture Controller",
+    description: "A gesture-controlled DJ application for mixing music.",
+    tech: ["React", "TypeScript", "Web Audio API", "Machine Learning"],
+    rarity: "Rare",
+    icon: "🎧",
+    image: "images/dj-gesture.png", // add later
+
+  },
+  {
+    title: " EquiBull (Hackathon Project)",
+    description: "An AI-powered equity housing platform.",
+    tech: ["React", "JavaScript", "Firebase", "Gemini2.5", "AI Integration"],
+    rarity: "Legendary",
+    icon: "🏠",
+    image: "images/equibull.png", // add later
+
   }
+
+
+
 ] as const;
 
 const rarityColors: Record<string, string> = {
